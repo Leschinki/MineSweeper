@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPFMineSweeper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFMineSweeper"
+        mc:Ignorable="d"
+        Title="MineSweeper" Height="720" Width="720"
+        ResizeMode="NoResize"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="657*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas Name="mainCanvas" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
